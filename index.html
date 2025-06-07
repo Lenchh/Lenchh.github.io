@@ -1,248 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link href="favicon.ico" rel="icon" type="image/x-icon">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Average&family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
-   <script src="https://kit.fontawesome.com/75b5b46fc9.js" crossorigin="anonymous"></script>
-   <style>
-     * {
-        box-sizing: border-box;
-    }
-    html {
-    background: url(background.png) no-repeat center fixed;
-  background-size: cover;
-}
-   body {
-        margin: 0;
-    }
-    .title {
-        display: flex;
-        column-gap: 20px;
-        align-items: center;
-        max-width: 100%;
-        height: 97vh;
-        border: 1.5px solid rgba(0, 0, 0, 0.667);
-        border-radius: 15px 50px;
-        margin: 10px 20px;
-    }
-    #title_1 {
-        color: rgba(211, 77, 99, 0.868);
-        margin: 0;
-    }
-    #title_2 {
-        color: rgba(0, 0, 0, 0.667);
-        margin: 0;
-    }
-    .title img {
-        width:100%;
-        max-width: 300px;
-        height: auto;
-        border-radius: 12px;
-        border: 5px outset rgba(245, 85, 112, 0.461);
-        margin-left:50px;
-    }
-    .titleText {
-        max-width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        word-wrap: break-word;
-    }
-    .mainContainer {
-        display: flex;
-        max-width: 100%;
-        height: auto;
-        column-gap: 20px;
-        justify-content: center;
-    }
-    .aboutMe {
-        max-width:45%;
-        height:auto;
-        margin: 10px auto;
-        background: linear-gradient(135deg, #ddaabb, #e7cda6, #bea1ea);
-        border: 1.5px solid whitesmoke; 
-        border-radius: 15px 50px 30px 5px;
-        padding: 10px;
-        color: #511212e1;
-        box-shadow: 10px 10px 10px #000000bf;
-      }
-      .aboutMe > *, .skills > * {
-        margin: 0;
-      }
-      .aboutMe a {
-        color: rgb(42, 163, 82);
-        text-decoration: none;
-      }
-      .aboutMe a:hover {
-        border-bottom: 1px solid;
-        text-shadow: 2px 2px 5px rgb(0, 255, 85);
-      }
-      .aboutMe:hover, .skills:hover {
-        box-shadow: 10px 10px 10px #bc7c91;
-      }
-      .skills {
-        max-width: 80%;
-        height: auto;
-        margin: 30px auto;
-        padding:10px;
-        background: linear-gradient(135deg, #ddaabb, #e7cda6);
-        border: 1.5px solid whitesmoke; 
-        box-shadow: 10px 10px 10px #000000bf;
-        border-radius: 15px;
-        color: #511212e1;
-      }
-      .skills ul {
-        list-style-image: url(favicon1.ico);
-        display: flex;
-        gap:20px;
-        flex-flow: row wrap;
-        justify-content: center;
-      }
-      .skills li, .contacts li {
-        margin: 0 10px 0 10px;
-      }
-      .contacts {
-        max-width: 80%;
-        height: auto;
-        margin: 30px auto;
-        padding:10px;
-      }
-      .contacts ul {
-        list-style-type: none;
-        display: flex;
-        gap:20px;
-        flex-flow: row wrap;
-        justify-content: center;
-      }
-      .contacts a, .contacts a:visited {
-        text-decoration: none;
-        color: #511212e1;
-        display: inline-block;
-        padding: 10px;
-        border: black solid;
-        border-radius: 15px;
-        box-shadow: 5px 7px 10px #000000bf;
-      }
-      .contacts a:hover {
-        font-size: 20px;
-         box-shadow: 7px 7px 10px #fffdfd;
-      }
-      @media screen and (max-width:780px) {
-        .title {
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            margin:0px 10px 0px 10px;
-            padding: 10px;
-            height: 100vh;
-        }
-        .titleText {
-           text-align: left;  
-           max-width: 50%;  
-        }
-        .title img {
-            max-width: 50%;
-            max-height: 50%;
-            margin: 0;
-        }
-        .mainContainer {
-            flex-direction: column;
-        }
-        .aboutMe {
-            max-width: 90%;
-            width: 90%;
-        }
-        .skills ul {
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-        }
-        .skills li, .contacts li {
-            margin: 0;
-        }
-        .contacts {
-            margin-bottom: 0;
-        }
-        .contacts ul {
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            margin: 0 auto;
-            gap:0;
-            padding: 0;
-        }
-      }
-      .unkempt-regular {
-  font-family: "Unkempt", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.unkempt-bold {
-  font-family: "Unkempt", cursive;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.cinzel-regular {
- font-family: "Average", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-   </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Average&family=Unkempt:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/75b5b46fc9.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="title unkempt-regular unkempt-bold">
-        <img src="image.jpg" alt="Image"> 
-        <div class="titleText">
-             <h1 id="title_1">Olena Pletnova</h1>
-             <h2 id="title_2" class="cinzel-regular">Learning frontend development</h2>
-        </div>
+  <div class="title unkempt-regular unkempt-bold">
+    <img src="image.jpg" alt="My photo">
+    <div class="titleText">
+      <h1>Olena Pletnova</h1>
+      <h2 class="cinzel-regular">Learning frontend development</h2>
     </div>
-    <div class="mainContainer unkempt-regular">
-        <div class="aboutMe">
-            <h2><b>About me</b></h2>
-    <p class="cinzel-regular">Motivated and responsible second-year Computer Science student with good soft skills and a keen interest in front-end development. 
-       Completed a 3-month online Stanford-based course in Computer Science Basics (CSA106 + CSB106), gaining a solid foundation in programming and code review. 
-       Currently studying front-end development and eager to gain hands-on experience through practical projects.</p>
-   </div>
+  </div>
+  <div class="mainContainer unkempt-regular">
+    <div class="aboutMe">
+      <h2><b>About me</b></h2>
+      <p class="cinzel-regular">Motivated and responsible second-year Computer Science student with good soft skills and
+        a keen interest in front-end development.
+        Completed a 3-month online Stanford-based course in Computer Science Basics (CSA106 + CSB106), gaining a solid
+        foundation in programming and code review.
+        Currently studying front-end development and eager to gain hands-on experience through practical projects.</p>
+    </div>
     <div class="aboutMe" style="background: linear-gradient(135deg,#bea1ea, #e7cda6, #ddaabb);">
-    <h2><b>Education</b></h2>
-    <p class="cinzel-regular"><i>Central Ukrainian State Pedagogical University</i> Kropyvnytskyi, Ukraine <br>September 2023 – Present (2nd year)</p>
-     <h2><b>Courses</b></h2>
-    <p class="cinzel-regular"><i>Stanford CSA106 + CSB106 (Computer Science Basics)</i> Online <br>Completed in December 2024 (3 months) <a href="https://diploma.programming.org.ua/en/d/DyMl30pBg21Ox7m256ejaPEXbGJoV5YQ" target="_blank"><b>Diploma</b></a></p>
-   </div>
+      <h2><b>Education</b></h2>
+      <p class="cinzel-regular"><i>Central Ukrainian State Pedagogical University</i> Kropyvnytskyi, Ukraine
+        <br>September 2023 – Present (2nd year)</p>
+      <h2><b>Courses</b></h2>
+      <p class="cinzel-regular"><i>Stanford CSA106 + CSB106 (Computer Science Basics)</i> Online <br>Completed in
+        December 2024 (3 months) <a href="https://diploma.programming.org.ua/en/d/DyMl30pBg21Ox7m256ejaPEXbGJoV5YQ"
+          target="_blank"><b>Diploma</b></a></p>
     </div>
-    <div class="skills unkempt-regular unkempt-bold" >
-        <h2>Skills</h2>
-        <ul class="cinzel-regular">
-            <li>Computer science</li>
-            <li>Java(basic)</li>
-            <li>HTML(basic, currently learning)</li>
-            <li>CSS(basic, currently learning)</li>
-            <li>Code review</li>
-            <li>Good communication and teamwork skills</li>
-        </ul>
-    </div>
-    <div class="skills unkempt-regular unkempt-bold">
-        <h2>Languages</h2>
-        <ul class="cinzel-regular">
-            <li>Ukrainian(Native)</li>
-            <li>English(Pre Intermediate)</li>
-        </ul>
-    </div>
-    <div class="contacts cinzel-regular">
-        <ul>
-        <p><a href="mailto:letneva2701@gmail.com"><i class="fa-solid fa-envelope"></i> Send email</a></p>
-        <p><a href="https://github.com/Lenchh" target="_blank"><i class="fa-brands fa-github"></i> My GitHub</a></p>
-        <p><a href="https://t.me/lench_h" target="_blank"><i class="fa-brands fa-telegram"></i> My Telegram</a></p>
-        </ul>
-    </div> 
+  </div>
+  <div class="skills unkempt-regular unkempt-bold">
+    <h2>Skills</h2>
+    <ul class="cinzel-regular">
+      <li>Computer science</li>
+      <li>Java(basic)</li>
+      <li>HTML(basic, currently learning)</li>
+      <li>CSS(basic, currently learning)</li>
+      <li>Code review</li>
+      <li>Good communication and teamwork skills</li>
+    </ul>
+  </div>
+  <div class="skills unkempt-regular unkempt-bold">
+    <h2>Languages</h2>
+    <ul class="cinzel-regular">
+      <li>Ukrainian(Native)</li>
+      <li>English(Pre Intermediate)</li>
+    </ul>
+  </div>
+  <div class="contacts cinzel-regular">
+    <ul>
+      <p><a href="mailto:letneva2701@gmail.com"><i class="fa-solid fa-envelope"></i> Send email</a></p>
+      <p><a href="https://github.com/Lenchh" target="_blank"><i class="fa-brands fa-github"></i> My GitHub</a></p>
+      <p><a href="https://t.me/lench_h" target="_blank"><i class="fa-brands fa-telegram"></i> My Telegram</a></p>
+    </ul>
+  </div>
 </body>
+
 </html>
