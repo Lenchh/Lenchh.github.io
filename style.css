@@ -111,6 +111,9 @@ h2 {
     border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
     border-radius: 16px;
+    /* scroll for Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
 }
 
 .block-information::-webkit-scrollbar {
